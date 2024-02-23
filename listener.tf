@@ -1,6 +1,6 @@
 resource "aws_lb_listener" "private" {
   count             =  var.ALB_INTERNAL ? 1 : 0
-  load_balancer_arn = data.terraform_remote_state.alb-private.PRIVATE_ALB_ARN
+  load_balancer_arn = data.terraform_remote_state.alb.PRIVATE_ALB_ARN
   port              = "80"
   protocol          = "HTTP"
 
