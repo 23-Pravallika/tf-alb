@@ -3,6 +3,6 @@ output "ALB_ARN"{
 }
 
 output "APP_LISTENER"{
-    value = aws_lb_listener.private.APP_LISTENER
+    value = aws_lb_listener.private.arn
 }
 
